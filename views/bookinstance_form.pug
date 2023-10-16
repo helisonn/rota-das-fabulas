@@ -49,7 +49,7 @@ block content
 
   form(method='POST' action='')
     div.form-group
-      label(for='book') Book:
+      label(for='book') Livro:
       select#book.form-control(type='select', placeholder='Select book' name='book' required='true' )
         - book_list.sort(function(a, b) {let textA = a.title.toUpperCase(); let textB = b.title.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
         for book in book_list
